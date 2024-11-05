@@ -110,7 +110,7 @@ def main():
     if 'messages' not in st.session_state:
         st.session_state.messages = []
     
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     
     # Input for blog topic
     with col1:
@@ -122,6 +122,10 @@ def main():
             "Select the intensity of symptoms:", 
             ["Mild", "Moderate", "Severe"]
         )
+        
+    # Input for City
+    with col3:
+        city = st.text_input("Enter current city:")
 
     if st.button("Get Advice"):
         if symptoms:
