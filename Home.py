@@ -86,7 +86,8 @@ def main():
 
     # Optional: Add footer
     
-    footer()
+    with st.sidebar:
+        footer()
 
 if __name__ == "__main__":
     main()
