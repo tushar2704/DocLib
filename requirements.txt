@@ -1,10 +1,10 @@
 streamlit
-langchain-groq
-langchain
-pydantic
+langchain-groq==0.1.5
+langchain==0.1.13
+pydantic==2.6.4
 openai
-crewai
-crewai_tools
+crewai==0.28.8
+crewai_tools==0.1.6
 langchain_community
 groq
 markdown_pdf
