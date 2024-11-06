@@ -1,13 +1,14 @@
+
 import os
 import streamlit as st
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from groq import Groq
 from langchain_community.tools import DuckDuckGoSearchRun
 from langchain_groq import ChatGroq 
 from crewai import Agent, Task, Crew, Process
 
 # Load environment variables
-load_dotenv()
+# load_dotenv()
 api_key = st.secrets["GROQ_API_KEY"]
 # Import local components
 from src.components.navigation import page_config, custom_style, footer
