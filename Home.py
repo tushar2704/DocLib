@@ -6,14 +6,14 @@ from langchain_community.tools import DuckDuckGoSearchRun
 
 # Load environment variables
 load_dotenv()
-
+api_key = st.secrets["GROQ_API_KEY"]
 # Import local components
 from src.components.navigation import page_config, custom_style, footer
 
 class HealthAdviceAgent:
     def __init__(self):
         # Validate API key
-        self.api_key = os.getenv('GROQ_API_KEY')
+        self.api_key = api_key #or os.getenv('GROQ_API_KEY')
         if not self.api_key:
             raise ValueError("GROQ API key not found. Please check your .env file.")
         

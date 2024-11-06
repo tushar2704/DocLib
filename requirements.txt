@@ -1,6 +1,6 @@
+streamlit
 langchain-groq
 langchain
-chainlit
 pydantic
 openai
 crewai
@@ -11,8 +11,3 @@ markdown_pdf
 duckduckgo-search
 fpdf
 unstructured
-pyowm
-tools
-langchain
-streamlit
-llama-cpp-python
